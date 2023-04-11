@@ -2,7 +2,7 @@
 Feature: KKL_test_tags
 
 	Scenario Outline: KKL_test_tags
-		Given an example scenario <parametre1>
+		Given an example <parametre1>
 		Given all step definitions are <parametre2>
 		Given the scenario <parametre3>
 
