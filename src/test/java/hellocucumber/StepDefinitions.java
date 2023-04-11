@@ -6,34 +6,24 @@ import org.junit.jupiter.api.Assertions.*;
 
 public class StepDefinitions {
 
-    @Given("an example scenario")
-    public void anExampleScenario() {
+    @Given("an example {string}")
+    public void anExampleScenario(String param1) {
+        param1 = "<parametre1>";
         System.out.println("petitchat");
     }
 
-    @When("all step definitions are implemented")
-    public void allStepDefinitionsAreImplemented() {
+    @When("all step definitions are {string}")
+    public void allStepDefinitionsAreImplemented(String param2) {
+        param2 = "<parametre2>";
         System.out.println("petitchat");
     }
 
-    @Then("the scenario passes")
-    public void theScenarioPasses() {
+    @Then("the scenario {string}")
+    public void theScenarioPasses(String param3) {
+        param3 = "<parametre2>";
         System.out.println("petitchat");
-    }
-
-    @Given("an example scenario 2")
-    public void anExampleScenario2() {
-        System.out.println("petitchien");
-    }
-
-    @When("all step definitions are implemented 2")
-    public void allStepDefinitionsAreImplemented2() {
-        System.out.println("petitchien");
-    }
-
-    @Then("the scenario passes 2")
-    public void theScenarioPasses2() {
-        System.out.println("petitchien");
     }
 
 }
+
+ 
